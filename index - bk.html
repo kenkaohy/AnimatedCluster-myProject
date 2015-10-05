@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>sample_map</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	
+		<!-- Dojo >
+		<script type="text/javascript">
+			// Define some Dojo configuration
+			var dojoConfig = {
+				async: true,
+				parseOnLoad: true,
+				idDebug: true
+			};
+		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.8.0/dojo/dojo.js"></script>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.8.0/dijit/themes/claro/claro.css"/>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.8.0/dijit/themes/claro/document.css"/>
+
+
+		<!-- Include OpenLayers -->
+		<!--script type="text/javascript" src="http://openlayers.org/api/2.11/OpenLayers.js"-->
+		<script type="text/javascript" src="./OpenLayers-2.12/OpenLayers.js"></script>
+		<link rel="stylesheet" href="./OpenLayers-2.12/tsheme/default/style.css" type="text/css">
+		
+		<!-- Animated Cluster -->
+		<script src="AnimatedCluster.js"></script>	
+		<script src="prettify.js"></script>	
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/cookbook.css"> 
+		
+		<!-- Main Application-->
+		<script src="app.js"></script>
+	<style> 
+
+            html, body {
+                margin  : 0;
+                padding : 0;
+                height  : 100%;
+                width   : 100%;
+            }
+
+            #map {
+                width    : 100%;
+                height   : 100%;
+				position : relative;
+            }
+            .map {
+                -webkit-box-shadow:  5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                box-shadow:  5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                -webkit-border-radius: 7px;
+                border-radius: 7px;
+                width: 90%;
+                height: 300px;
+                margin-bottom: 20px;
+            }			
+
+        
+	</style> 
+	<!-- The magic comes here --> 
+	</head> 
+
+<body onload="init()"> 
+	
+	<!-- Display map on web page -->
+	<div id="sample_map" style="width: 100%; height: 100%;"></div>
+	<script>
+		init();
+	</script>	
+</body> 
+</html>

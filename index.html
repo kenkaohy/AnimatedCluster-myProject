@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>sample_map</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+	<!-- Include OpenLayers -->
+	<!--script type="text/javascript" src="http://openlayers.org/api/2.11/OpenLayers.js"-->
+	<script type="text/javascript" src="./OpenLayers-2.12/OpenLayers.js"></script>
+	<link rel="stylesheet" href="./OpenLayers-2.12/theme/default/style.mobile.css" type="text/css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/cookbook.css"> 
+	
+	<!-- Animated Cluster -->
+	<script src="AnimatedCluster.js"></script>	
+	<script src="prettify.js"></script>	
+	
+	<!-- Featurepops API -->
+	<script src="patches_OL-popup-autosize.js"></script>
+	<script src="FeaturePopups.js"></script>
+ 
+</head> 
+
+<body> 
+	
+	<!-- Display map on web page -->
+	<div id="sample_map" style="width: 100%; height: 100%;"></div>
+	
+	<!-- Main Application-->
+	<script src="app.js"></script>
+	
+	<!-- Popups -->
+	<script src="feature-popups.js"></script>
+	
+</body> 
+</html>
